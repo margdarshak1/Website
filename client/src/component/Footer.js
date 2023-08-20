@@ -6,7 +6,7 @@ const Footer = () => {
       <section className="footer" id="footer">
             <div className="box-container">
                 <div className="box">
-                    <h3>Quick s</h3>
+                    <h3>Quick links</h3>
                     <a href="#hero"> <i className="fas fa-arrow-right"></i> home </a>
                     <a href="#about"> <i className="fas fa-arrow-right"></i> about </a>
                     <a href="#service"> <i className="fas fa-arrow-right"></i> services </a>
