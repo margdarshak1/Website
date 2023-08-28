@@ -10,6 +10,9 @@ let mailTransporter = nodemailer.createTransport({
         pass: "sxdcthedvkukqlsk"
     }
 })
+router.get("/",(req,res)=>{
+    res.status(200).json("hi");
+})
 // Example GET endpoint
 router.get('/users/:id', async(req, res) => {
     try {
