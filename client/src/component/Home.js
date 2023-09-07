@@ -44,7 +44,7 @@ const Home = (props) => {
                 name,email,mobile,whnumber,expert,problem
             })
         })
-        const data = await res.json;
+        const data = await res.json();
         console.log(data);
         if(res.status === 422 || !data){
             alert("from is already submitted");
