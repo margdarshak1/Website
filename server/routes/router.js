@@ -67,7 +67,7 @@ router.post('/users', async (req, res) => {
 });
 
 
-router.post("/message", async(req,res)=>{
+router.post("https://server-six-azure.vercel.app/message", async(req,res)=>{
     const{name,email, mobile, whnumber, expert, problem} = req.body;
     if (!name || !mobile || !problem ) {
         console.log(req.body)
