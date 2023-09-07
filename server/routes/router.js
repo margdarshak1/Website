@@ -87,7 +87,6 @@ router.post("/message", async(req,res)=>{
         })
 
         const newUser = await user.save();
-        res.status(201).json(newUser)
        
 let details = {
     from: "start112002up@gmail.com",
@@ -137,6 +136,8 @@ let details = {
                 res.status(200).json("mail sent")
             }
         })
+        res.status(201).json(newUser)
+
     } catch (error) {
         return res.status(422).json(error);
     }

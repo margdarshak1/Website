@@ -24,7 +24,7 @@ const Contact = () => {
     const addinpdata = async(e)=>{
         e.preventDefault();
         const {name,email,mobile,whnumber,expert,problem} = inpval;
-        const res = await fetch("/message", {
+        const res = await fetch("https://server-six-azure.vercel.app/message", {
             method: "POST",
             headers:{
                 "Content-Type":"application/json"
