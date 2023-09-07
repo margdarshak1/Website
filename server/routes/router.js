@@ -5,6 +5,8 @@ const nodemailer = require("nodemailer");
 
 let mailTransporter = nodemailer.createTransport({
     service: "gmail",
+    port : 3000,
+    timeout: 10000,
     auth:{
         user: "start112002up@gmail.com",
         pass: "sxdcthedvkukqlsk"
