@@ -33,6 +33,7 @@ const Home = (props) => {
     }
     const addinpdata = async(e)=>{
         e.preventDefault();
+        console.log("we recieved ",inpval)
         const {name,email,mobile,whnumber,expert,problem} = inpval;
         const res = await fetch("https://server-six-azure.vercel.app/message", {
             method: "POST",
@@ -43,7 +44,7 @@ const Home = (props) => {
                 name,email,mobile,whnumber,expert,problem
             })
         })
-        const data = await res.json();
+        const data = await res.json;
         console.log(data);
         if(res.status === 422 || !data){
             alert("from is already submitted");
